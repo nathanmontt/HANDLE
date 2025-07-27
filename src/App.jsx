@@ -1,10 +1,10 @@
-import Header from './assets/components/Header.jsx'
+import Content from './assets/components/Content.jsx'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Content />
     </>
   )
 }
