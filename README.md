@@ -1,12 +1,62 @@
-# React + Vite
+# HANDLE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um experimento _fashionista_.
 
-Currently, two official plugins are available:
+### ÍNDICE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [Sobre o Projeto](#about)
+* [Linguagens](#langs)
+* [Setup](#setup)
+* [Créditos](#credits)
 
-## Expanding the ESLint configuration
+<h1 id="about">Sobre o Projeto</h1>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*HANDLE* foi criado com o intuito de estudo. Inicialmente, o "estudar a _framework_ **ReactJS**" foi (e está sendo) feito. Agora, colocando a prova desses estudos, surge o projeto. Ele trás em si uma simples _landing page_ que conta a história de uma empresa de roupas experimentais.
+
+
+<h1 id="langs">Linguagens</h1>
+
+Tendo o intuito de treinar o uso da _framework_ **ReactJS**, outra linguagem usada para estilos foi **TailwindCSS**.
+
+
+<h1 id="setup">Setup do Projeto</h1>
+
+#### Instalação
+
+```sh
+npm install
+npm run dev
+```
+
+#### Instalação de Dependências
+```sh
+npm install tailwindcss @tailwindcss/vite
+```
+
+#### Configurando o Vite Plugin
+```sh
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+
+#### Importando TailwindCSS
+Colocar em um arquivo ```.css``` para utilizar
+```sh
+@import "tailwindcss";
+```
+
+#### Compilação e _"Minify"_  Production
+
+```sh
+npm run build
+```
+
+
+<h1 id="credits"> Créditos </h1>
+
+Copyright © 2025, Nathan Monteiro
